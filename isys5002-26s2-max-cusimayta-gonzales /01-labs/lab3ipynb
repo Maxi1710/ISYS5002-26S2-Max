@@ -1,0 +1,109 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyP95aj9bElUakD74PMECuoU",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Maxi1710/ISYS5002-26S2-Max/blob/main/isys5002-26s2-max-cusimayta-gonzales%20/01-labs/lab3ipynb\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 27,
+      "metadata": {
+        "id": "104NZv2rxng8",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "b6608dd5-b56b-4333-d417-ad3f6f75f803"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Weather Menu:\n",
+            "1. Check Temperature\n",
+            "2. Check Humidity\n",
+            "3. Check Wind Speed\n",
+            "4. Exit\n",
+            "Enter your choice (1-4): 2\n",
+            "You selected option: 2\n",
+            "You chose to check the humidity.\n",
+            "User selected option: 2\n"
+          ]
+        }
+      ],
+      "source": [
+        "# Displaying the weather menu options\n",
+        "print(\"Weather Menu:\")\n",
+        "print(\"1. Check Temperature\")\n",
+        "print(\"2. Check Humidity\")\n",
+        "print(\"3. Check Wind Speed\")\n",
+        "print(\"4. Exit\")\n",
+        "\n",
+        "# Prompting the user to enter their choice\n",
+        "choice = input(\"Enter your choice (1-4): \")\n",
+        "print(\"You selected option:\", choice)\n",
+        "\n",
+        "# Example of a simple decision structure based on the user's choice\n",
+        "if choice == \"1\":\n",
+        "    print(\"You chose to check the temperature.\")\n",
+        "elif choice == \"2\":\n",
+        "    print(\"You chose to check the humidity.\")\n",
+        "elif choice == \"3\":\n",
+        "    print(\"You chose to check the wind speed.\")\n",
+        "elif choice == \"4\":\n",
+        "    print(\"Exiting the program.\")\n",
+        "else:\n",
+        "    print(\"Invalid choice. Please select a valid option.\")\n",
+        "\n",
+        "user_choice = choice  # \"1\" corresponds to \"Check Temperature\"\n",
+        "print(\"User selected option:\", user_choice)\n",
+        "if user_choice == \"1\":\n",
+        "    # Ask the user for the current temperature\n",
+        "    temp_input = input(\"Enter the current temperature (in °C): \")\n",
+        "\n",
+        "    # Since we assume the user enters a valid number, convert the input into an integer.\n",
+        "    # Remember: input() returns a string, so we use int() to convert it.\n",
+        "    temperature = int(temp_input)\n",
+        "\n",
+        "    # Provide a weather forecast based on the temperature using nested if-else\n",
+        "    if temperature < 15:\n",
+        "        print(\"It's cold – wear a jacket!\")\n",
+        "    elif 15 <= temperature < 25:\n",
+        "        print(\"It's warm – enjoy the day!\")\n",
+        "    else:\n",
+        "        print(\"It's hot – stay cool!\")"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "W5e-6MizN62T"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
