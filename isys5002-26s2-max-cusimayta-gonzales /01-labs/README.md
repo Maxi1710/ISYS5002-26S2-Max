@@ -156,14 +156,3 @@ As the lectures stressed, a DSS supports a decision, but it is the human's job t
 
 The program only uses data that I type in myself; it does not collect information from websites or other people. Following the MoSCoW technique, web scraping was a deliberate "won't have": the lectures showed the legal and ethical risks of scraping, and my problem does not need external data.
 
-## Use of generative AI
-
-<!--
-  WRITE THIS SECTION YOURSELF. Suggested structure:
-  - The initial version of the six Python modules was generated with Claude (Anthropic);
-    the full conversation is in the ai-assistance-logs folder.
-  - Claude also helped turn my answers into the Rationale and Sociotechnical sections of this README.
-  - My own contributions: choosing the idea, my real routine and values in config.py,
-    the insight that hours matter more than shift type, testing, the video, ...
-  Delete this comment when you are done.
--->
